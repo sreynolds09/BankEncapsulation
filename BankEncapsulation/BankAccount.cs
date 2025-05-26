@@ -12,12 +12,12 @@ namespace BankEncapsulation
 
         public void Deposit(double amount)
         {
-            balance = amount;
+            balance += amount;
         }
 
-        public double GetBalance()
+        public string GetBalance()
         {
-            return balance;
+            return $"${balance}";
         }
 
 
